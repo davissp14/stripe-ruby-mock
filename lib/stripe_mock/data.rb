@@ -164,7 +164,7 @@ module StripeMock
         created: 1366194027,
         outcome: {
           network_status: "approved_by_network",
-          reason: null,
+          reason: nil,
           risk_level: "normal",
           risk_score: 7,
           seller_message: "Payment complete.",
@@ -174,7 +174,7 @@ module StripeMock
           card: {
             brand: "visa",
             checks: {
-              address_line1_check: null,
+              address_line1_check: nil,
               address_postal_code_check: "pass",
               cvc_check: "pass"
             },
@@ -183,11 +183,11 @@ module StripeMock
             exp_year: 2024,
             fingerprint: "DYXBZQf5zfImpchO",
             funding: "credit",
-            installments: null,
+            installments: nil,
             last4: "4242",
             network: "visa",
-            three_d_secure: null,
-            wallet: null
+            three_d_secure: nil,
+            wallet: nil
           },
           type: "card"
         },
