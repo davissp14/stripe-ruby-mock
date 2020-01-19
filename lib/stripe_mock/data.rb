@@ -162,6 +162,35 @@ module StripeMock
         id: charge_id,
         object: "charge",
         created: 1366194027,
+        outcome: {
+          network_status: "approved_by_network",
+          reason: null,
+          risk_level: "normal",
+          risk_score: 7,
+          seller_message: "Payment complete.",
+          type: "authorized"
+        },
+        payment_method_details: {
+          card: {
+            brand: "visa",
+            checks: {
+              address_line1_check: null,
+              address_postal_code_check: "pass",
+              cvc_check: "pass"
+            },
+            country: "US",
+            exp_month: 4,
+            exp_year: 2024,
+            fingerprint: "DYXBZQf5zfImpchO",
+            funding: "credit",
+            installments: null,
+            last4: "4242",
+            network: "visa",
+            three_d_secure: null,
+            wallet: null
+          },
+          type: "card"
+        },
         livemode: false,
         paid: true,
         amount: 0,
@@ -175,27 +204,7 @@ module StripeMock
         shipping: {},
         statement_descriptor: "Charge #{charge_id}",
         status: 'succeeded',
-        source: {
-          object: "card",
-          last4: "4242",
-          type: "Visa",
-          brand: "Visa",
-          funding: "credit",
-          exp_month: 12,
-          exp_year: 2013,
-          fingerprint: "3TQGpK9JoY1GgXPw",
-          country: "US",
-          name: "name",
-          address_line1: nil,
-          address_line2: nil,
-          address_city: nil,
-          address_state: nil,
-          address_zip: nil,
-          address_country: nil,
-          cvc_check: nil,
-          address_line1_check: nil,
-          address_zip_check: nil
-        },
+        source: "tok_visa",
         captured: params.has_key?(:capture) ? params.delete(:capture) : true,
         refunds: {
           object: "list",
