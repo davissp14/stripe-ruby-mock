@@ -200,6 +200,7 @@ module StripeMock
         fraud_details: {},
         receipt_email: nil,
         receipt_number: nil,
+        receipt_url: nil,
         refunded: false,
         shipping: {},
         statement_descriptor: "Charge #{charge_id}",
