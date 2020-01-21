@@ -374,23 +374,46 @@ module StripeMock
           tiers: nil,
           tiers_mode: nil,
           transform_usage: nil,
-          trial_period_days: 3,
+          trial_period_days: 0,
           usage_type: "licensed"
         },
         items: {
           object: 'list',
           data: [{
             id: 'si_1AwFf62eZvKYlo2C9u6Dhf9',
+            billing_thresholds: nil,
             created: 1504035973,
             metadata: {},
             object: 'subscription_item',
+            metadata: {},
             plan: {
-              amount: 999,
-              created: 1504035972,
-              currency: StripeMock.default_currency
+              id: "plan_GW7KA7mM18NiqU",
+              object: "plan",
+              active: true,
+              aggregate_usage: nil,
+              amount: 12500,
+              amount_decimal: "12500",
+              billing_scheme: "per_unit",
+              created: 1578591989,
+              currency: "usd",
+              interval: "month",
+              interval_count: 1,
+              livemode: false,
+              metadata: {},
+              nickname: "GB1",
+              product: "prod_GW7GUDsA7kcqTF",
+              tiers: nil,
+              tiers_mode: nil,
+              transform_usage: nil,
+              trial_period_days: 3,
+              usage_type: "licensed"
             },
+            subscription: "sub_GZG1SCgw5HYdLE",
+            tax_rates: []
             quantity: 1
-          }]
+          }],
+          has_more: false,
+          url: nil
         }
       }, params)
     end
