@@ -375,7 +375,7 @@ module StripeMock
           tiers_mode: nil,
           transform_usage: nil,
           trial_period_days: 0,
-          usage_type: "licensed"
+          usage_type: "licensed",
         },
         items: {
           object: 'list',
@@ -406,14 +406,14 @@ module StripeMock
               tiers_mode: nil,
               transform_usage: nil,
               trial_period_days: 3,
-              usage_type: "licensed"
+              usage_type: "licensed",
             },
             subscription: "sub_GZG1SCgw5HYdLE",
-            tax_rates: []
-            quantity: 1
+            tax_rates: [],
+            quantity: 1,
           }],
           has_more: false,
-          url: nil
+          url: nil,
         }
       }, params)
     end
